@@ -1,0 +1,59 @@
+@import url(/assets/css/_reset.css);
+@import url(/assets/css/_responsive.css);
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: #6c98c4;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+}
+main{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #2baaa4;
+    border-radius: 10px;
+    margin: 10px;
+}
+aside{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+    background-color: rgb(69, 173, 168);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    background-color: #6c98c4;
+    align-items: center;
+}
+.animation{
+    animation-name: change-color;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+@keyframes change-color{
+    0%{
+        background-color: #2baaa4;
+    }
+    50%{
+        background-color: #4d2baa;
+    }
+    100%{
+        background-color: #aa5e2b;
+    }
+}
