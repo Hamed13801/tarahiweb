@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            transition: 0.5s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+         ::selection {
+            color: #101010;
+            background-color: whitesmoke;
+        }
+        
+        html {
+            padding: 50px;
+            background: url("background.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        header {
+            padding-top: 50px;
+            text-align: center;
+        }
+        
+        body {
+            color: whitesmoke;
+            background-color: #101010;
+            border-radius: 25px;
+        }
+        
+        .container {
+            padding-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .profile img {
+            width: 250px;
+            border-radius: 50%;
+        }
+        
+        a {
+            color: tomato;
+        }
+        
+        h2 {
+            transition: 0.5s;
+        }
+        
+        h2:hover {
+            color: tomato;
+        }
+        
+        h3 {
+            transition: 0.5s;
+        }
+        
+        h3:hover {
+            color: tomato;
+        }
+        
+        form {
+            text-align: center;
+            align-items: center;
+            /* margin-left: 100px;
+            margin-right: 100px; */
+            border-radius: 5px;
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 25px;
+        }
+        
+        label {
+            color: #101010;
+        }
+        
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid tomato;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            transition: 0.5s;
+            /* width: 100%; */
+            background-color: #101010;
+            color: whitesmoke;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: tomato;
+        }
+        
+        footer {
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        
+        footer h4 {
+            text-align: center;
+        }
+        
+        footer h4 a {
+            transition: 0.5s;
+            text-decoration: none;
+        }
+        
+        footer h4 a:hover {
+            color: tomato;
+        }
+        
+        @media screen and (max-width: 600px) {
+            html {
+                padding: 10px;
+            }
+            header {
+                padding-top: 20px;
+            }
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            ul {
+                padding-left: 10px;
+            }
+            footer {
+                padding-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Resume</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpeg" alt="Profile Picture">
+                <h2>Info</h2>
+                <h3>Hamed Shakerardakani</h3>
+                <h3>Computer Science Student</h3>
+                <ul>
+                    <li>.بنده حامد شاکر اردکانی هستم ، متولد سال 1380 ، علاقه مند به درس طراحی وب هستم</li>
+                    <li>.تا الان تجربه ای دررابطه با طراحی وب انچنان نداشته ام ولی علاقه بسیاری به طراحی وب دارم</li>
+                    <li>.بنده تا الان با زبان پایتون اشنایی خیلی کمی دارم و پروژه های بسیاری کوچکی را با زبان پایتون نوشته ام</li>
+                </ul>
+                <h3>Address</h3>
+                Phonenumber: <a href="tel:+98912xxxxxxx">+98912xxxxxxx</a><br> Email: <a href="mailto:info@email.com">info@email.com</a>
+                <h3>Subscribe</h3>
+                <form action="" method="GET">
+                    <label for="fname">Firstname</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Yourname..">
+
+                    <label for="lname">Lastname</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your lastname..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="Iran">Iran</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </section>
+    <footer>
+        <h4>Code created by <a href="">Hamed Shakerardakani</a> with ❤</h4>
+    </footer>
+</body>
+<script>
+</script>
+
+</html>
